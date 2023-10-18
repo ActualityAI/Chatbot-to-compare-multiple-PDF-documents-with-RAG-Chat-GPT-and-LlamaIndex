@@ -48,7 +48,7 @@ python chat.py
 Any question you ask will result in two things : 
 
 1) It will be broken down into multiple sub questions and then sent to both datasets.
-2) All responses are then gathered and sent to response synthesiser to produce the final response to your question.
+2) All responses are then gathered and sent to a response synthesiser to produce the final response to your question.
  
 The multiple sub questions in step one will all be colour coded so you can see what questions are being directed to what dataset and also what their response was.
 
