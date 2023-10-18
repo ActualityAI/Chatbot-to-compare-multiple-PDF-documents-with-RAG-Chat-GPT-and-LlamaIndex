@@ -17,7 +17,7 @@ pip install -r requirements.txt
 
 ## Step 2
 
-Copy and paste your Open AI API key in both the embed.py and chat.py files replacing this line 
+Copy and paste your Open AI API key in both the embed.py and chat.py files here
 
 ```python
 openai.api_key = "copy-and-paste-your-openai-api-key-here"
