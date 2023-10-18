@@ -13,26 +13,25 @@ All responses are then gathered and sent to response synthesiser to produce the 
 
 First, install the required packages:
 
-\`\`\`
+```
 pip install -r requirements.txt
-\`\`\`
+```
 
 ## Step 2
 
 Copy and paste your Open AI API key in both the embed.py and chat.py files replacing this line 
 
-\`\`\`python
-# Chat GPT Init 
+```python
 openai.api_key = "copy-and-paste-your-openai-api-key-here"
-\`\`\`
+```
 
 ## Step 3 
 
 Run embed.py 
 
-\`\`\`python
+```python
 python embed.py 
-\`\`\`
+```
 
 You will probably get 2 warnings but no errors. You can ignore the 2 warnings.
 
@@ -44,9 +43,9 @@ alice_docs.DB are the emebeddings created from thext text of the PDF of Alice In
 
 Talk to the chatbot :
 
-\`\`\`python
+```python
 python chat.py
-\`\`\`
+```
 
 Any question you ask will result in two things : 
 
