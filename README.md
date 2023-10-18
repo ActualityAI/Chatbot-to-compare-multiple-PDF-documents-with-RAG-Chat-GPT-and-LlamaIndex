@@ -1,9 +1,7 @@
 # Chatbot-to-compare-multiple-PDF-documents-with-RAG-Chat-GPT-and-LlamaIndex
-Chatbot to compare multiple PDF documents with RAG, Chat GPT and LlamaIndex
-
 This chatbot is different to others in that is built to avoid the poor performance of chatbots that have the embeddings of multiple PDF and other documents all embedded together in one large dataset.
 
-Instead it uses LlamaIndex to not only create an separate embeddings dataset for each PDF but it uses QueryEngineTool and SubQuestionQueryEngine to break down a complex query (like compare and contrast) into multiple sub questions and sends them to their specific targetted dataset.
+Instead it uses LlamaIndex to not only create a separate embeddings dataset for each PDF but it uses QueryEngineTool and SubQuestionQueryEngine to break down a complex query (like compare and contrast) into multiple sub questions and sends them to their specific targetted dataset.
 
 All responses are then gathered and sent to response synthesiser to produce the final response to your question.
 
@@ -35,9 +33,9 @@ python embed.py
 
 You will probably get 2 warnings but no errors. You can ignore the 2 warnings.
 
-This will create 2 new sub directories containing embeddings create from the 2 PDF files which will be called alice_docs.DB and glass_docs.DB
+This will create 2 new sub directories containing embeddings created from the 2 PDF files which will be called alice_docs.DB and glass_docs.DB
 
-alice_docs.DB are the emebeddings created from thext text of the PDF of Alice In Wonderland and glass_docs.DB are the emebeddings created from thext text of the PDF of the sequel Through The Looking Glass
+alice_docs.DB are the emebeddings created from the text of the PDF of Alice In Wonderland and glass_docs.DB are the emebeddings created from the text of the PDF of the sequel Through The Looking Glass
 
 ## Step 4
 
@@ -54,7 +52,7 @@ Any question you ask will result in two things :
  
 The multiple sub questions in step one will all be colour coded so you can see what questions are being directed to what dataset and also what their response was.
 
-The final response (which is not colour coded) will then be displayed.
+The final response from step 2 (which is not colour coded) will then be displayed.
 
 For example try asking "which book is more surreal and why?"
 
