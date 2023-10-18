@@ -30,17 +30,17 @@ if __name__ == '__main__':
     # Set up the QueryEngineTool to use both engines for comparisons
     query_engine_tools = [
         QueryEngineTool(
-            query_engine=glass_engine,
-            metadata=ToolMetadata(
-                name="glass_PDF",
-                description="Provides information about Alice Through The looking Glass",
-            ),
-        ),
-        QueryEngineTool(
             query_engine=alice_engine,
             metadata=ToolMetadata(
                 name="alice_PDF",
                 description="Provides information about Alice In Wonderland",
+            ),
+        ),
+        QueryEngineTool(
+            query_engine=glass_engine,
+            metadata=ToolMetadata(
+                name="glass_PDF",
+                description="Provides information about Alice Through The looking Glass",
             ),
         ),
     ]
