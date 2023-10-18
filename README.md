@@ -1,7 +1,7 @@
 # Chatbot-to-compare-multiple-PDF-documents-with-RAG-Chat-GPT-and-LlamaIndex
 This chatbot is different to others in that is built to avoid the poor performance of chatbots that have the embeddings of multiple PDF and other documents all embedded together in one large dataset.
 
-Instead it uses LlamaIndex to not only create a separate embeddings dataset for each PDF but it uses QueryEngineTool and SubQuestionQueryEngine to break down a complex query (like compare and contrast) into multiple sub questions and sends them to their specific targetted dataset.
+Instead it uses Retrieval Augmented Generation (RAG) and LlamaIndex to not only create a separate embeddings dataset for each PDF but it uses QueryEngineTool and SubQuestionQueryEngine to break down a complex query (like compare and contrast) into multiple sub questions and sends them to their specific targetted dataset.
 
 All responses are then gathered and sent to response synthesiser to produce the final response to your question.
 
