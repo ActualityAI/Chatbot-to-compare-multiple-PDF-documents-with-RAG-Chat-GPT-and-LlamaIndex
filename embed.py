@@ -10,7 +10,7 @@ openai.api_key = "copy-and-paste-your-openai-api-key-here"
 alice_docs = SimpleDirectoryReader(input_files=["alice.pdf"]).load_data()
 glass_docs = SimpleDirectoryReader(input_files=["glass.pdf"]).load_data()
 
-# Setup Sub Question Query Engine, one for each doc and save them to disk as vector DBs
+# Save them to disk as vector DBs
 alice_index = VectorStoreIndex.from_documents(alice_docs)
 alice_index.storage_context.persist("alice_docs.DB")
 
